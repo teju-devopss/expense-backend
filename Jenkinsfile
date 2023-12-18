@@ -3,7 +3,7 @@ pipeline {
     node { label 'workstation'}
   }
 
-  statges {
+  stages {
 
     stage('Compile') {
       steps {
