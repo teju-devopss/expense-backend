@@ -1,27 +1,3 @@
-pipeline {
-  agent any
-    stages {
+@library('om-library') _
 
-    stage('compile'){
-      steps {
-        echo 'compile'
-      }
-    }
-
-    stage('Testcases'){
-      steps {
-        echo 'Testcases'
-      }
-    }
-    stage('Build'){
-      steps {
-          echo 'Build'
-      }
-    }
-    stage('Release'){
-      steps {
-          echo 'Release'
-      }
-    }
-  }
-}
+ci()
