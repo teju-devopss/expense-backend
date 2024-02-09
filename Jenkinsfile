@@ -1,34 +1,4 @@
-pipeline {
-    agent {
-      node { label 'workstation'}
-    }
+@Library('d76-library')
 
-    stages {
+ci()
 
-        stage('Compile') {
-            steps {
-                echo 'Compile'
-            }
-        }
-
-        stage('Test Cases') {
-            steps {
-                echo 'Test Cases'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Build'
-            }
-        }
-
-        stage('Release') {
-            steps {
-                echo 'Release'
-            }
-        }
-
-    }
-
-}
