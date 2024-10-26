@@ -1,29 +1,4 @@
-pipeline {
-   agent any 
-   stages {
+@library('shared_library') _
 
-      stage('compile') {
-         steps {
-            echo 'compile'
-         } 
-      }
+ci()
 
-      stage('testcases') {
-         steps {
-            echo 'testcases'
-         } 
-      }
-
-      stage('build') {
-         steps {
-            echo 'build'
-         } 
-      }
-
-      stage('Release') {
-         steps {
-            echo 'Release'
-         } 
-      }
-   }
-}
