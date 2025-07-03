@@ -1,0 +1,11 @@
+name: Developer_Branch_CI
+on:
+  push:
+    branches:
+      - 'XPNS-*'
+
+jobs:
+  check-bats-version:
+    runs-on: self-hosted
+    steps:
+      - run: env

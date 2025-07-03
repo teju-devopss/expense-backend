@@ -1,0 +1,11 @@
+name: Developer_Pull_Request_CI
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  check-bats-version:
+    runs-on: self-hosted
+    steps:
+      - run: env
