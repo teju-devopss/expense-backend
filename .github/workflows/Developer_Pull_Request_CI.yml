@@ -8,5 +8,4 @@ jobs:
   check-bats-version:
     runs-on: self-hosted
     steps:
-      - run: ls
-      - run: tail index.js
+      - run: env
