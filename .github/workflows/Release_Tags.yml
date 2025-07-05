@@ -2,8 +2,15 @@ name: Release_Tags
 on:
   push:
     tags:
-      - 'v*'
+      - "*"
+
+env:
+  service_name: expense-backend
+
 
 jobs:
   CI_Steps:
-    uses: teju-devopss/github-actions/.github/workflows/Release_Tags.yml@main
+    uses: raghudevopsb77/github-actions/.github/workflows/Release_Tags.yml@main
+    secrets: inherit
+    with:
+      service_name: expense-backend

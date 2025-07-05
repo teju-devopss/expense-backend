@@ -1,9 +1,14 @@
-name: Developer_Pull_Request_CI
+name: Developer_Pull_Request
 on:
   pull_request:
     branches:
       - 'main'
+env:
+  service_name: expense-backend
 
 jobs:
   CI_Steps:
     uses: teju-devopss/github-actions/.github/workflows/Developer_Pull_Request_CI.yml@main
+    secrets: inherit
+    with:
+      service_name: expense-backend
