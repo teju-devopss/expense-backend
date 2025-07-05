@@ -4,6 +4,9 @@ on:
     branches:
       - 'XPNS-*'
 
+env:
+  service_name: expense-backend
+
 jobs:
   CI_Steps:
     uses: teju-devopss/github-actions/.github/workflows/Developer_Branch_CI.yml@main

@@ -3,6 +3,8 @@ on:
   push:
     tags:
       - 'v*'
+env:
+  service_name: expense-backend
 
 jobs:
   CI_Steps:
